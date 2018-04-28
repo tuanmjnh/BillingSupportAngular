@@ -1,3 +1,2 @@
 # BillingSupportAngular
-BillingSupportAngular
 Angular with Firebase
