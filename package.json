@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
+    "s": "ng serve",
+    "b": "ng build --prod",
+    "t": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -21,9 +21,16 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@firebase/app": "^0.1.6",
+    "angularfire2": "^5.0.0-rc.6.0",
+    "bootstrap": "^4.1.0",
     "core-js": "^2.4.1",
     "eslint": "^4.19.1",
-    "rxjs": "^5.5.6",
+    "firebase": "^4.13.1",
+    "jquery": "^3.2.1",
+    "ngx-toastr": "^8.4.0",
+    "popper.js": "^1.14.3",
+    "rxjs": "^5.5.10",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
