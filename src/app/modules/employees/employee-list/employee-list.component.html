@@ -1,24 +1,25 @@
-<h4 class="text-center">Employee List</h4>
-<table class="table table-sm table-hover table-bordered">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Position</th>
-      <th>Office</th>
-      <th>Salary</th>
-      <th>#</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let employee of employeeList">
-      <td>{{employee.name}}</td>
-      <td>{{employee.position}}</td>
-      <td>{{employee.office}}</td>
-      <td>{{employee.salary}}</td>
-      <td>
-        <span class="btn btn-info" (click)="onEdit(employee)">Edit</span>
-        <span class="btn btn-danger" (click)="onDelete(employee.$key)">Delete</span>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Office</th>
+        <th>Salary</th>
+        <th>#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employeeList">
+        <td>{{employee.name}}</td>
+        <td>{{employee.position}}</td>
+        <td>{{employee.office}}</td>
+        <td>{{employee.salary}}</td>
+        <td>
+          <span class="btn btn-info" (click)="onEdit(employee)">Edit</span>
+          <span class="btn btn-danger" (click)="onDelete(employee.$key)">Delete</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

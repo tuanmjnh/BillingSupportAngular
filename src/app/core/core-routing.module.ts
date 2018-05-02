@@ -5,14 +5,16 @@ import { AuthComponent } from '../modules/auth/auth.component';
 import { HomeComponent } from '../modules/home/home.component';
 import { IntegrateComponent } from '../modules/Integrate/integrate.component';
 // import { EmployeesComponent } from '../modules/Employees/employees.component';
-import { FormComponent } from '../modules/form/form.component';
+// import { FormModule } from '../modules/form/form.module';
 
 const routes: Routes = [
   { path: '', redirectTo: 'auth', pathMatch: 'full' },
   { path: 'auth', component: AuthComponent },
   { path: 'home', component: HomeComponent },
   { path: 'integrate', component: IntegrateComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: 'form', loadChildren: '../modules/form/form.module#FormModule' },
+  { path: 'employee', loadChildren: '../modules/employees/employees.module#EmployeesModule' },
+  { path: '**', component: NotFoundComponent },
   // {
   //   path: 'login',
   //   component: LoginComponent
@@ -35,6 +37,6 @@ export const routingComponents = [
   IntegrateComponent,
   // EmployeesComponent,
   // EmployeeListComponent,
-  FormComponent,
+  // FormModule,
   NotFoundComponent
 ];
